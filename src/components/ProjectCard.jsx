@@ -3,49 +3,67 @@ import { useState } from "react";
 export function ProjectCard({
   title,
   summary,
-  actions,
-  result,
-  tools,
+  role,
+  solution,
+  stack,
+  duration,
   link,
+  thumbnail,
 }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className={`project-card compact ${open ? "open" : ""}`}>
-      <div className="project-header">
-        <h4 className="project-title">{title}</h4>
+    <div className={`project-card ${open ? "open" : ""}`}>
+      {/* COLLAPSED HEADER */}
+      <div className="project-main">
+        <div className="project-thumb">
+          <img src={thumbnail} alt={`${title} thumbnail`} />
+        </div>
 
-        <button
-          className="project-toggle"
-          onClick={() => setOpen(!open)}
-          aria-expanded={open}
-        >
-          {open ? "Hide details ▴" : "Show details ▾"}
-        </button>
+        <div className="project-info">
+          <h4 className="project-title">{title}</h4>
+          <p className="project-summary">{summary}</p>
+          <p className="project-role">
+            <strong>Role:</strong> {role}
+          </p>
+
+          <button
+            className="project-toggle"
+            onClick={() => setOpen(!open)}
+            aria-expanded={open}
+          >
+            {open ? "Hide details ▴" : "Show details ▾"}
+          </button>
+        </div>
       </div>
 
-      <p className="project-summary">{summary}</p>
-
-      <p className="project-result">
-        <strong>Result:</strong> {result}
-      </p>
-
+      {/* EXPANDED DETAILS */}
       {open && (
         <div className="project-details">
-          <ul className="project-actions">
-            {actions.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
+          <p>
+            <strong>Solution</strong>
+            <br />
+            {solution}
+          </p>
 
-          <p className="project-tools">{tools.join(" · ")}</p>
+          <p>
+            <strong>Stack</strong>
+            <br />
+            {stack}
+          </p>
+
+          <p>
+            <strong>Duration</strong>
+            <br />
+            {duration}
+          </p>
 
           {link && (
             <a
               href={link}
-              className="project-link"
               target="_blank"
               rel="noopener noreferrer"
+              className="project-link"
             >
               View project →
             </a>

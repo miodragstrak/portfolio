@@ -10,11 +10,11 @@ function App() {
 
         <div className="hero-content">
           <h1>Miodrag Strak</h1>
-          <h2>Product Manager · Automation & AI Systems</h2>
+          <h2>Product Manager · Automation & Intelligent Systems</h2>
           <p>
             I design and deliver complex digital products by combining
-            product strategy, automation, and AI-driven workflows —
-            from concept to production.
+            product strategy, automation, and intelligent systems -
+            bridging technology, organizations, and real-world constraints.
           </p>
 
           <div className="actions">
@@ -35,40 +35,39 @@ function App() {
 
         <div className="cards">
           <ProjectCard
-            title="AI Automation Platform"
-            summary="AI-driven automation platform integrating CRMs, messaging systems, and external APIs to reduce manual operational work."
-            actions={[
-              "Defined product requirements and automation flows",
-              "Designed AI-assisted workflows for CRM and messaging systems",
-              "Coordinated API integrations and implementation",
-            ]}
-            result="Reduced manual work by 60%+ and improved process reliability."
-            tools={[
-              "n8n",
-              "OpenAI API",
-              "REST APIs",
-              "CRM systems",
-              "Webhooks",
-            ]}
-            link="https://github.com/yourusername/ai-automation-platform"
+            title="AI-Driven Travel Itinerary & Quotation Automation"
+            summary="Designed and delivered a dynamic AI-assisted system for building and pricing multi-day golf travel itineraries, fully automated through Google Sheets and workflow orchestration."
+            role="AI Automation Engineer · Product Designer"
+            solution="Designed and implemented a complete itinerary-building and quotation system that enables travel managers to generate detailed day-by-day
+                      golf travel packages including transport, accommodation, golf courses,
+                      and local tours.
+
+                      The solution dynamically pulls pricing and configuration data from
+                      Google Sheets and assembles structured itineraries using automated
+                      workflows and AI-assisted content generation."
+            stack="JavaScript · n8n · AI Agent API · Google Sites"
+            duration="Jul 2025 - Nov 2025"
+            link="https://sites.google.com/view/golf-connor/input-parameters"
+            thumbnail={`${import.meta.env.BASE_URL}thumbs/n8n.jpeg`}
           />
 
           <ProjectCard
-            title="Logistics Intelligence Dashboard"
-            summary="Dashboard providing real-time shipment tracking and trade intelligence through third-party logistics APIs."
-            actions={[
-              "Led API vendor evaluation and comparison",
-              "Defined data models and dashboard requirements",
-              "Coordinated data integration and synchronization",
-            ]}
-            result="Enabled real-time shipment visibility and data-driven operational decisions."
-            tools={[
-              "Logistics APIs",
-              "Data aggregation",
-              "Dashboards",
-              "Product discovery",
-            ]}
-            link="https://github.com/yourusername/logistics-dashboard"
+            title="NelutAI - AI-Powered Tourist Experience Assistant"
+            summary="Designed and developed an AI-powered chatbot that helps tourists
+                    interact with destinations through natural language, leveraging
+                    open data and cloud-based AI services."
+            role="Product Lead · AI Systems Designer"
+            solution="Led the design and development of NelutAI, an AI-driven conversational
+                      assistant that enables tourists to access destination information,
+                      services, and recommendations through natural language interaction.
+
+                      The solution integrates open data sources and curated local knowledge,
+                      and is deployed using cloud-based AI infrastructure to ensure
+                      scalability, reliability, and real-time response generation."
+            stack="AI Chatbot Frameworks · Open Data APIs · Microsoft Azure · Workflow Automation · Web Integrations"
+            duration="May 2024 - Jun 2025"
+            link="https://miodragstrak.github.io/_nelutai/"
+            thumbnail={`${import.meta.env.BASE_URL}thumbs/nelutai.png`}
           />
         </div>
       </section>
@@ -111,16 +110,16 @@ function App() {
             <h4>Certifications</h4>
             <ul className="cert-list">
               <li>
-                <strong>Business Plan Development</strong>
-                <span>Faculty of Organizational Sciences (FON)</span>
+                <strong>Business Investment Plan Development (2025)</strong>
+                <span>Chamber of Commerce and Industry of Serbia - training in investment planning, entrepreneurship, and business sustainability.</span>
               </li>
               <li>
-                <strong>ISO Standards & Quality Management</strong>
-                <span>TÜV Serbia</span>
+                <strong>Software Development (2023)</strong>
+                <span>MVP Workshop - Hands-on training focused on software development in blockchain and Web3-based software projects.</span>
               </li>
               <li>
-                <strong>AI & Automation (Applied)</strong>
-                <span>Project-based experience</span>
+                <strong>Scrum Master Accredited Certification (2019)</strong>
+                <span>International Scrum Institute™ - Agile delivery, team facilitation, and iterative product development.</span>
               </li>
             </ul>
           </div>
@@ -136,7 +135,7 @@ function App() {
 
       <div className="social-links icons">
         <a
-          href="mailto:miodrag@example.com"
+          href="mailto:miodrag.strak@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Email"
@@ -149,7 +148,7 @@ function App() {
         </a>
 
         <a
-          href="https://www.linkedin.com/in/your-linkedin/"
+          href="https://www.linkedin.com/in/miodragstrak/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
@@ -161,7 +160,7 @@ function App() {
         </a>
 
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/miodragstrak"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
