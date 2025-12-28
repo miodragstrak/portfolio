@@ -138,13 +138,14 @@ body {
   height: 96px;
   border-radius: 10px;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .project-thumb img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  padding: 10px;
 }
 
 .project-info {
@@ -295,20 +296,23 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: var(--muted);
+  color: #cbd5e1; 
   text-decoration: none;
   font-size: 0.95rem;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .social-links.icons a:hover {
   color: var(--accent);
+  transform: translateY(-1px);
+  filter: drop-shadow(0 0 4px rgba(56, 189, 248, 0.4));
 }
 
 .social-links.icons svg {
   width: 18px;
   height: 18px;
   fill: currentColor;
+  opacity: 0.95; 
 }
 
 /* MOBILE */
